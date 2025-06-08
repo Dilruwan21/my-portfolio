@@ -9,7 +9,7 @@ import { SiTypescript, SiMongodb, SiFirebase, SiTailwindcss, SiNextdotjs, SiGrap
 import { BsAwardFill } from "react-icons/bs";
 
 // Import profile image
-import profilePic from './assect/me.jpg';
+import profilePic from './assect/_me.jpg';
 
 // Import project images
 import teaFactoryProject from './assect/t.png';
