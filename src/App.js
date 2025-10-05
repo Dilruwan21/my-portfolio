@@ -6,7 +6,7 @@ import { SiTypescript, SiMongodb, SiFirebase, SiTailwindcss, SiNextdotjs, SiGrap
 import { BsAwardFill } from "react-icons/bs";
 
 // Import profile image and resume
-import profilePic from 'XAOD9748.JPEG';
+import profilePic from './assect/XAOD9748.JPEG';
 import resumeFile from './assect/Resume_Anuradha.pdf';
 
 // Import project images
