@@ -1,6 +1,3 @@
-
-
-
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiDownload, FiExternalLink } from "react-icons/fi";
@@ -8,8 +5,9 @@ import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt, FaGraduationCap, FaPython 
 import { SiTypescript, SiMongodb, SiFirebase, SiTailwindcss, SiNextdotjs, SiGraphql } from "react-icons/si";
 import { BsAwardFill } from "react-icons/bs";
 
-// Import profile image
+// Import profile image and resume
 import profilePic from './assect/_me.jpg';
+import resumeFile from './assect/Resume_Anuradha.pdf';
 
 // Import project images
 import teaFactoryProject from './assect/t.png';
@@ -21,7 +19,6 @@ import socialDashboardProject_ from './assect/s.webp';
 import awsCert from './assect/s3.png';
 import googleCloudCert from './assect/s1.png';
 import reactCert from './assect/s2.png';
-
 
 export default function App() {
   // Active section tracking
@@ -85,7 +82,7 @@ export default function App() {
     return () => clearInterval(typingInterval);
   }, []);
 
-  // Projects data - replace with your actual projects
+  // Projects data
   const projects = [
     {
       title: "AI-Driven Supply Chain Optimization for Tea Factory Management in Sri Lanka's Smallholdings.",
@@ -105,22 +102,19 @@ export default function App() {
       title: "Hotel Booking Website - A Modern Reservation Platform",
       description: "The Hotel Booking Website is a modern and user-friendly platform designed to simplify the process of reserving hotel accommodations while offering unique features that make it stand out in the market. Developed using React.js for a dynamic and interactive frontend, Node.js for a robust and efficient backend, and MongoDB as the database for seamless data management, this project provides a streamlined and reliable booking experience. With its intuitive interface, the platform is optimized for both desktop and mobile devices, ensuring accessibility and convenience for all users.",
       github: "https://github.com/Dilruwan21/Hotel-Reservation-System-.git",
-      
       tech: ["React", "Node.js", "Mongodb"],
       image: socialDashboardProject
     },
-
     {
       title: " SmartWatchAuth: Neural Network-Based Biometric Authentication",
       description: "SmartWatchAuth is a MATLAB-based project developed for the AI and Machine Learning module at NSBM Green University. This system focuses on biometric user authentication by analyzing motion data collected from smartwatches or smartphones using built-in accelerometers.",
       github: "https://github.com/Dilruwan21/Dilruwan21-smartwatch-authentication-ml.git",
-      
       tech: ["Mathlab"],
       image: socialDashboardProject_
     }
   ];
 
-  // Skills data - customize with your skills
+  // Skills data
   const skills = [
     { name: "React", icon: <FaReact className="text-blue-500" /> },
     { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
@@ -136,25 +130,24 @@ export default function App() {
     { name: "Python", icon: <FaPython className="text-blue-700" /> }
   ];
 
-  // Education data - update with your education
+  // Education data - updated with graduation status
   const education = [
     {
-      degree: "Bachelor of Science (Hon’s) in Software Engineering",
-      institution: "University of Plymouth (U K) Nsbm Green University",
+      degree: "Bachelor of Science (Hon's) in Software Engineering",
+      institution: "University of Plymouth (UK) - NSBM Green University",
       year: "2022 - 2026",
-      description: "Focus on Full Stack Development.",
+      description: "Graduated with Second Class Upper Division - Focus on Full Stack Development",
       icon: <FaGraduationCap className="text-blue-500" />
     },
     {
-      
       institution: "Dharmapala College Bandarawela",
       year: "2018 - 2021",
-      description: " GCE Advanced Level : 2021 (2022) Maths Stream",
+      description: "GCE Advanced Level : 2021 (2022) Maths Stream",
       icon: <FaGraduationCap className="text-blue-500" />
     }
   ];
 
-  // Certifications data - add your actual certificates
+  // Certifications data
   const certifications = [
     {
       title: "React.js Essential Training",
@@ -180,14 +173,12 @@ export default function App() {
       image: reactCert,
       link: "https://www.linkedin.com/learning/certificates/1530a98694da22cb0f8cd185cad086335c5e3e07f3a828987fc823f545321057?u=26140778"
     },
-    
   ];
 
-  // Social links - update with your actual profiles
+  // Social links
   const socialLinks = [
     { name: "GitHub", url: "https://github.com/Dilruwan21", icon: <FiGithub /> },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/anuradha-dilruwan-3b128a29b/", icon: <FiLinkedin /> },
-    
     { name: "Email", url: "mailto:anuradhadilruwan5@gmail.com", icon: <FiMail /> }
   ];
 
@@ -362,7 +353,7 @@ export default function App() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            I specialize in crafting high-performance, scalable web applications with cutting-edge technologies. 
+            Recent Software Engineering graduate with Second Class Upper Division honors, specializing in crafting high-performance, scalable web applications with cutting-edge technologies. 
             With expertise in both frontend and backend development, I deliver seamless digital experiences 
             that drive business growth and user engagement.
           </motion.p>
@@ -466,25 +457,7 @@ export default function App() {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              I am passionate about exploring new technologies and staying updated with industry trends. Always seeking opportunities to learn, grow, and contribute to impactful projects, I thrive on challenges and collaboration. Let's connect and create something extraordinary together!
-            </motion.p>
-            
-            <motion.p 
-              className="text-lg mb-6 leading-relaxed"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
-            >
-              
-            </motion.p>
-            
-            <motion.p 
-              className="text-lg mb-8 leading-relaxed"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-            >
-              
+              As a recent Software Engineering graduate with Second Class Upper Division honors from the University of Plymouth, I am passionate about exploring new technologies and staying updated with industry trends. Always seeking opportunities to learn, grow, and contribute to impactful projects, I thrive on challenges and collaboration. Let's connect and create something extraordinary together!
             </motion.p>
             
             <motion.div
@@ -502,13 +475,13 @@ export default function App() {
                   Contact Me
                 </motion.button>
               </a>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href={resumeFile} download="Resume_Anuradha_Dilruwan.pdf">
                 <motion.button
                   className="px-6 py-3 rounded-lg border border-blue-500 text-blue-500 hover:bg-blue-500/10 flex items-center gap-2"
                   whileHover={{ y: -3 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <FiDownload /> Resume
+                  <FiDownload /> Download Resume
                 </motion.button>
               </a>
             </motion.div>
@@ -936,7 +909,7 @@ export default function App() {
               
               {/* Email */}
               <motion.a
-                href="mailto:anuraadhadilruwan5@gmail.com"
+                href="mailto:anuradhadilruwan5@gmail.com"
                 className="flex items-center gap-4 p-4 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors"
                 whileHover={{ x: 5 }}
                 initial={{ opacity: 0, x: -20 }}
@@ -952,8 +925,6 @@ export default function App() {
                 </div>
               </motion.a>
             </div>
-            
-            
           </motion.div>
         </div>
       </section>
@@ -1010,4 +981,3 @@ const Typewriter = ({ text, delay = 100 }) => {
     </span>
   );
 };
-
